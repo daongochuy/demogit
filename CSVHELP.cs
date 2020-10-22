@@ -9,7 +9,8 @@ using System.Data;
 namespace workkingwithcsv
 {
     class CSVHELP
-    {
+    {   
+	   // Read csv
         public bool ReadCSV(string path, out string text)
         {
             text = "\n";
@@ -20,6 +21,7 @@ namespace workkingwithcsv
             }
             return true;
         }
+		// Write CSV
         public bool WriteCSV(string[] arr, string path)
         {
             StreamWriter sw = new StreamWriter(path);
