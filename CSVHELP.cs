@@ -41,6 +41,7 @@ namespace workkingwithcsv
             sw.Close();
             return true;
         }
+		//insert CSV
         public bool InsertCSV(string[] arr, string path)
         {
             StreamWriter sw = File.AppendText(path);
